@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'GrowSurfSDK'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.summary = 'Headless Swift SDK for GrowSurf mobile referral attribution.'
   s.description = 'GrowSurfSDK provides native iOS referral attribution, participant creation, sharing, and participant-scoped referral portal access.'
   s.homepage = 'https://docs.growsurf.com/developer-tools/ios-sdk'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '15.0'
   s.swift_versions = ['6.0']
   s.source = {
-    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.1/GrowSurfSDK-CocoaPods-0.1.1.zip'
+    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfSDK-CocoaPods-0.1.2.zip'
   }
   s.default_subspec = 'Core'
 

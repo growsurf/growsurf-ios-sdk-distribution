@@ -16,23 +16,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GrowSurfSDK",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.1/GrowSurfSDK.xcframework.zip",
-            checksum: "76b18c5b48bfae8244a8e18d88d047a1f4142a559a855e6e63e3beae7c2b5d8a"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfSDK.xcframework.zip",
+            checksum: "87207e13de9220bfc512b61416682162304fc672c480f273da0b36057c122638"
         ),
         .binaryTarget(
             name: "GrowSurfBranchAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.1/GrowSurfBranchAttribution.xcframework.zip",
-            checksum: "69e75c49347609c6f010d95fbf2ad418d0ec86344859b88e1cc441669b432277"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfBranchAttribution.xcframework.zip",
+            checksum: "36126690d021c5505baaff162a8d37ed54ad78d31d9905a4664473cc3e35e584"
         ),
         .binaryTarget(
             name: "GrowSurfAdjustAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.1/GrowSurfAdjustAttribution.xcframework.zip",
-            checksum: "2077b72dd3eb0d19c2f8842c72ba03dde2bf9c0647f8124f7f41ac23de7c99a4"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfAdjustAttribution.xcframework.zip",
+            checksum: "91f3bf7283338f65c100f395a2feb822d16e93d960ee798dfea20b0fd0c47b71"
         ),
         .binaryTarget(
             name: "GrowSurfAppsFlyerAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.1/GrowSurfAppsFlyerAttribution.xcframework.zip",
-            checksum: "52bb8c243e5833d19137afbb80cafa46a00abfac33b370775055b3d333ea11fc"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfAppsFlyerAttribution.xcframework.zip",
+            checksum: "2ea0c326deed83ed611e73643f94a5d61428753fedecb49688cf6a1010661630"
         ),
     ]
 )
