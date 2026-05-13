@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.1.1
+
+Fixes binary Swift Package Manager and manual XCFramework consumers by exposing the public client as `GrowSurf` from the `GrowSurfSDK` module.
+
+- Updates all public binary artifacts and checksums.
+- Updates the CocoaPods binary source archive.
+- Keeps the package products unchanged: `GrowSurfSDK`, `GrowSurfBranchAttribution`, `GrowSurfAdjustAttribution`, and `GrowSurfAppsFlyerAttribution`.
+
 ## 0.1.0
 
 Initial public binary release of the GrowSurf iOS SDK.
