@@ -8,16 +8,20 @@ Choose one install path.
 
 ### CocoaPods
 
+Use the tag-pinned public podspec:
+
 ```ruby
-pod 'GrowSurfSDK', '~> 0.1.1'
+growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.1.1/GrowSurfSDK.podspec'
+
+pod 'GrowSurfSDK', :podspec => growsurf_podspec
 ```
 
 Optional attribution adapters are available as subspecs:
 
 ```ruby
-pod 'GrowSurfSDK/BranchAttribution', '~> 0.1.1'
-pod 'GrowSurfSDK/AdjustAttribution', '~> 0.1.1'
-pod 'GrowSurfSDK/AppsFlyerAttribution', '~> 0.1.1'
+pod 'GrowSurfSDK/BranchAttribution', :podspec => growsurf_podspec
+pod 'GrowSurfSDK/AdjustAttribution', :podspec => growsurf_podspec
+pod 'GrowSurfSDK/AppsFlyerAttribution', :podspec => growsurf_podspec
 ```
 
 ### Swift Package Manager
