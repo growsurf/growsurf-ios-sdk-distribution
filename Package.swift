@@ -18,27 +18,27 @@ let package = Package(
         .binaryTarget(
             name: "GrowSurfSDK",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSDK.xcframework.zip",
-            checksum: "af295a432c2385c7afc491f48c0b2401fadc1f0b21cab2bde494ac420d05e26b"
+            checksum: "138da865e9c439d44a2e7de96a9b0e3f85f58f29651fa8432335767ef668ecc6"
         ),
         .binaryTarget(
             name: "GrowSurfBranchAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfBranchAttribution.xcframework.zip",
-            checksum: "c7923005f9718e2df6d31ee7df2b5d13263a60f9d5e37fa78b3390fa6b37fb5f"
+            checksum: "726a467566e29d572f392c89dfd4be64bd35bfec3be9cd31cd31cd73299d78c1"
         ),
         .binaryTarget(
             name: "GrowSurfAdjustAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfAdjustAttribution.xcframework.zip",
-            checksum: "c69b0b618d0fcad49fd4fd3d18346b370d4967bd2c7f399cb47ffe09e6d15f44"
+            checksum: "fa7cb69c90edfafcafc4514d6fd386e58e182ea4a5e878d59fb1293bb82f7055"
         ),
         .binaryTarget(
             name: "GrowSurfAppsFlyerAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfAppsFlyerAttribution.xcframework.zip",
-            checksum: "6ef8f5ad4d3e112e9f4456d6d8c5b330f93db8ac177a620736b785e14433b79d"
+            checksum: "c883a85c1578247702b57cde877346236aaed1aeff8fb34a0079f0d8faf635be"
         ),
         .binaryTarget(
             name: "GrowSurfSingularAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSingularAttribution.xcframework.zip",
-            checksum: "ff4bc8100c8a6fdcd6cb6db99a9f3a4a9f83beb373eb2c9e5a5b1d1192ac1eed"
+            checksum: "b4f7611d382ac1c5f510938737a3399f12e0a40c3cd1ede45b5cd23f2102bb81"
         ),
     ]
 )
