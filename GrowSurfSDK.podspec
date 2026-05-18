@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name = 'GrowSurfSDK'
-  s.version = '0.1.2'
-  s.summary = 'Headless Swift SDK for GrowSurf mobile referral attribution.'
-  s.description = 'GrowSurfSDK provides native iOS referral attribution, participant creation, sharing, and participant-scoped referral portal access.'
+  s.version = '0.2.0'
+  s.summary = 'Swift SDK for GrowSurf mobile referral attribution and the native GrowSurf window.'
+  s.description = 'GrowSurfSDK provides native iOS referral attribution, participant creation, sharing, participant-scoped referral portal access, and the experimental native GrowSurf window.'
   s.homepage = 'https://docs.growsurf.com/developer-tools/ios-sdk'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'GrowSurf' => 'support@growsurf.com' }
   s.platform = :ios, '15.0'
   s.swift_versions = ['6.0']
   s.source = {
-    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.1.2/GrowSurfSDK-CocoaPods-0.1.2.zip'
+    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSDK-CocoaPods-0.2.0.zip'
   }
   s.default_subspec = 'Core'
 
@@ -30,5 +30,10 @@ Pod::Spec.new do |s|
   s.subspec 'AppsFlyerAttribution' do |appsflyer|
     appsflyer.dependency 'GrowSurfSDK/Core'
     appsflyer.vendored_frameworks = 'GrowSurfAppsFlyerAttribution.xcframework'
+  end
+
+  s.subspec 'SingularAttribution' do |singular|
+    singular.dependency 'GrowSurfSDK/Core'
+    singular.vendored_frameworks = 'GrowSurfSingularAttribution.xcframework'
   end
 end

@@ -1,5 +1,14 @@
 # Release Notes
 
+## 0.2.0
+
+Adds the native GrowSurf window beta and expands attribution adapter coverage.
+
+- Adds the `GrowSurfSingularAttribution` binary target, Swift package product, and CocoaPods subspec.
+- Adds native GrowSurf window support for sharing, invites, referrals, rewards, leaderboard, affiliate summary, commissions, payouts, participant settings, FAQ, how-it-works, and terms sections.
+- Keeps participant sharing centered on the canonical `shareUrl`.
+- Refreshes Swift Package Manager checksums and CocoaPods binary source archives for every binary artifact.
+
 ## 0.1.2
 
 Refreshes the binary release artifacts for the public distribution repo.
