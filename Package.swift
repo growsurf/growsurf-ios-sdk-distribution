@@ -18,27 +18,27 @@ let package = Package(
         .binaryTarget(
             name: "GrowSurfSDK",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSDK.xcframework.zip",
-            checksum: "629ce7b2e51663b813022c1f3fe1ad11c8ed718a00de68b965d1a602ae17e27b"
+            checksum: "af295a432c2385c7afc491f48c0b2401fadc1f0b21cab2bde494ac420d05e26b"
         ),
         .binaryTarget(
             name: "GrowSurfBranchAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfBranchAttribution.xcframework.zip",
-            checksum: "42dce3d737cae735ab6c32e6f44d5bda749f13fa76c3e3f84f28d9efd5d800e9"
+            checksum: "c7923005f9718e2df6d31ee7df2b5d13263a60f9d5e37fa78b3390fa6b37fb5f"
         ),
         .binaryTarget(
             name: "GrowSurfAdjustAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfAdjustAttribution.xcframework.zip",
-            checksum: "e803edb992b44bccc1fcb010a5b5d28c0f3516f6637fe35d2fb13cf4723e455a"
+            checksum: "c69b0b618d0fcad49fd4fd3d18346b370d4967bd2c7f399cb47ffe09e6d15f44"
         ),
         .binaryTarget(
             name: "GrowSurfAppsFlyerAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfAppsFlyerAttribution.xcframework.zip",
-            checksum: "597b24f808234a77910ec45bb3904afc97a3a0b111d360681c96a9d5c25ca68c"
+            checksum: "6ef8f5ad4d3e112e9f4456d6d8c5b330f93db8ac177a620736b785e14433b79d"
         ),
         .binaryTarget(
             name: "GrowSurfSingularAttribution",
             url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSingularAttribution.xcframework.zip",
-            checksum: "a460f9cc594960990884c0ce618a13df2e8fd8031502db0fe960772440d55c6e"
+            checksum: "ff4bc8100c8a6fdcd6cb6db99a9f3a4a9f83beb373eb2c9e5a5b1d1192ac1eed"
         ),
     ]
 )
