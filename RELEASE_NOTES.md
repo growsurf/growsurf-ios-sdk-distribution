@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.2.1
+
+Security hardening for the native GrowSurf window cache and the in-window image loader.
+
+- Encrypts the participant-scoped window cache via `NSFileProtectionCompleteUntilFirstUserAuthentication`, matching the Keychain accessibility used for tokens. Legacy `UserDefaults` cache entries are cleared on first use.
+- Re-validates every redirect hop in the in-window remote image loader against the supported scheme allow-list to block downgrade attempts to non-`http(s)` schemes (e.g. `file:` / `jar:`).
+- No public API or installation changes. Source-compatible upgrade from 0.2.0.
+
 ## 0.2.0
 
 Adds the native GrowSurf window beta and expands attribution adapter coverage.
