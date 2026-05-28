@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'GrowSurfSDK'
-  s.version = '0.2.0'
+  s.version = '0.2.1'
   s.summary = 'Swift SDK for GrowSurf mobile referral attribution and the native GrowSurf window.'
   s.description = 'GrowSurfSDK provides native iOS referral attribution, participant creation, sharing, participant-scoped referral portal access, and the experimental native GrowSurf window.'
   s.homepage = 'https://docs.growsurf.com/developer-tools/ios-sdk'
@@ -9,11 +9,12 @@ Pod::Spec.new do |s|
   s.platform = :ios, '15.0'
   s.swift_versions = ['6.0']
   s.source = {
-    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.0/GrowSurfSDK-CocoaPods-0.2.0.zip'
+    :http => 'https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.2.1/GrowSurfSDK-CocoaPods-0.2.1.zip'
   }
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
+    core.dependency 'GoogleSignIn', '~> 9.1'
     core.vendored_frameworks = 'GrowSurfSDK.xcframework'
   end
 
