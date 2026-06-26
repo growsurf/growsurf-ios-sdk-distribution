@@ -1,5 +1,15 @@
 # Release Notes
 
+## 0.3.1
+
+Tax Documentation support in the native GrowSurf window, Google Contacts fixes, and internal cleanup. Source-compatible upgrade from 0.3.0.
+
+- Adds support for the Tax Documentation hosted action: when a campaign requires tax forms, the native window's participant settings expose a **Tax Forms** row that opens the secure hosted W-9 / W-8 flow (tax IDs never touch the app). Call `requestTaxInfoSession()` if you build a custom settings UI instead.
+- Adds a native residency / VAT picker and an expanded country list (including Kosovo) for the hosted tax flow.
+- Surfaces a clear "try again later" message when a tax-form submission hits a transient backend error.
+- Fixes the native window's Google contacts list.
+- Internal cleanup, campaign-driven copy, and parity fixes; no breaking public API changes.
+
 ## 0.3.0
 
 Public API cleanup. Clean break from 0.2.1 (no shipped consumers, no back-compat shims).
@@ -15,6 +25,7 @@ Public API cleanup. Clean break from 0.2.1 (no shipped consumers, no back-compat
 - `presentGrowSurfWindow` now returns a public `GrowSurfWindowController` with a `close()` method for programmatic dismissal of the presented window.
 - Server contract is unchanged; URL paths still carry `:participantId`, now filled locally from the JWT.
 - `POST /session` now includes the device's `mobileInstanceId` in the request body so the server can scope the session rate limit per device instead of per IP. Multiple devices behind one NAT (office Wi-Fi, dev box + simulator + phone, CGNAT carrier) no longer share a single bucket. The SDK also retries `/session` once after a 1.5 s delay on a 429 response so a single hairline trip is absorbed silently instead of surfacing the raw rate-limit message in the GrowSurf window UI. Older servers that don't read `mobileInstanceId` ignore the field and continue per-IP limiting.
+- The core `GrowSurfSDK` no longer depends on GoogleSignIn. The native window's Google contacts import uses a dependency-free external-browser sign-in flow by default; to use the native in-app Google Sign-In sheet instead, add the new optional `GrowSurfGoogleContacts` product (SPM) or `GrowSurfSDK/GoogleContacts` subspec (CocoaPods), which bundles GoogleSignIn. Apps that don't add it never link GoogleSignIn.
 
 ## 0.2.1
 

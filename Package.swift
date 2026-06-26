@@ -9,36 +9,51 @@ let package = Package(
     ],
     products: [
         .library(name: "GrowSurfSDK", targets: ["GrowSurfSDK"]),
+        .library(name: "GrowSurfGoogleContacts", targets: ["GrowSurfGoogleContacts"]),
         .library(name: "GrowSurfBranchAttribution", targets: ["GrowSurfSDK", "GrowSurfBranchAttribution"]),
         .library(name: "GrowSurfAdjustAttribution", targets: ["GrowSurfSDK", "GrowSurfAdjustAttribution"]),
         .library(name: "GrowSurfAppsFlyerAttribution", targets: ["GrowSurfSDK", "GrowSurfAppsFlyerAttribution"]),
         .library(name: "GrowSurfSingularAttribution", targets: ["GrowSurfSDK", "GrowSurfSingularAttribution"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/google/GoogleSignIn-iOS", from: "9.1.0"),
+    ],
     targets: [
         .binaryTarget(
             name: "GrowSurfSDK",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.0/GrowSurfSDK.xcframework.zip",
-            checksum: "6c43e3be6cee8689513ba91dab241534d36a6f91329f86bc75bb24dbcaa56113"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfSDK.xcframework.zip",
+            checksum: "e7a7986b712684d1bbcec6377985ae5b50ebce4d9f02cb9237d38307d66aa4e9"
+        ),
+        // Optional GoogleSignIn-backed contacts import, layered on the binary Core. Distributed as
+        // source because a binaryTarget cannot declare the external GoogleSignIn dependency. Consumers
+        // who don't add this product never link GoogleSignIn.
+        .target(
+            name: "GrowSurfGoogleContacts",
+            dependencies: [
+                "GrowSurfSDK",
+                .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS"),
+            ],
+            path: "Sources/GrowSurfGoogleContacts"
         ),
         .binaryTarget(
             name: "GrowSurfBranchAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.0/GrowSurfBranchAttribution.xcframework.zip",
-            checksum: "6d563af742f5ab772ea4f1a748463d7ad4ba9f425b5b20fb23fd61923a6c8b94"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfBranchAttribution.xcframework.zip",
+            checksum: "efff938a9b8c52560fa11f927ce008206886fe2d88663369f361d2fb4ff36ba2"
         ),
         .binaryTarget(
             name: "GrowSurfAdjustAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.0/GrowSurfAdjustAttribution.xcframework.zip",
-            checksum: "62456a89008a9c8253bfcb85c8af98252d8def25e452bd7b8f58e55c34dde782"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfAdjustAttribution.xcframework.zip",
+            checksum: "ab576f722d46aeebbfd77f26ae8287a627571bc25a100668484412e830bd359e"
         ),
         .binaryTarget(
             name: "GrowSurfAppsFlyerAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.0/GrowSurfAppsFlyerAttribution.xcframework.zip",
-            checksum: "d27ca5acddcda3e855ec775fa37a020bae60e440005d0e59ca34fd422129c6eb"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfAppsFlyerAttribution.xcframework.zip",
+            checksum: "3966f5370146b02f9fcc6de630bc3abd46a4a1d6fd0f1d206b7e7f8081fb4a23"
         ),
         .binaryTarget(
             name: "GrowSurfSingularAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.0/GrowSurfSingularAttribution.xcframework.zip",
-            checksum: "7313938413514be3a7db7d14bc5dc1efbdeefde56767a56d77a7358eced4dd6a"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfSingularAttribution.xcframework.zip",
+            checksum: "c420fc2dedc606d30bb0303c63664a6a68a9ba38f08dca6bf117d02843d8a283"
         ),
     ]
 )
