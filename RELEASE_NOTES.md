@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.3.2
+
+CocoaPods packaging fix for the optional Google Contacts in-app sign-in. Source-compatible upgrade from 0.3.1.
+
+- The optional in-app Google Sign-In sheet (`GrowSurfGoogleContacts`) is now **Swift Package Manager only**. It has been removed from the CocoaPods subspecs: as a source subspec layered on the binary `GrowSurfSDK.xcframework` it shares the core's module name and cannot compile. CocoaPods apps continue to use the core SDK's built-in dependency-free browser-based Google contacts flow — no change for them.
+- No changes to the core SDK, the attribution adapters, or the public API.
+
 ## 0.3.1
 
 Tax Documentation support in the native GrowSurf window, Google Contacts fixes, and internal cleanup. Source-compatible upgrade from 0.3.0.

@@ -21,8 +21,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GrowSurfSDK",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfSDK.xcframework.zip",
-            checksum: "e7a7986b712684d1bbcec6377985ae5b50ebce4d9f02cb9237d38307d66aa4e9"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.2/GrowSurfSDK.xcframework.zip",
+            checksum: "8685f603b66e38186a7dcc86156d3f22520e82e51472be958c3f7c3a2920462d"
         ),
         // Optional GoogleSignIn-backed contacts import, layered on the binary Core. Distributed as
         // source because a binaryTarget cannot declare the external GoogleSignIn dependency. Consumers
@@ -37,23 +37,23 @@ let package = Package(
         ),
         .binaryTarget(
             name: "GrowSurfBranchAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfBranchAttribution.xcframework.zip",
-            checksum: "efff938a9b8c52560fa11f927ce008206886fe2d88663369f361d2fb4ff36ba2"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.2/GrowSurfBranchAttribution.xcframework.zip",
+            checksum: "ae7ce908d90ca46d5b9fdc75e88f032f3a93960a483667ea1b5310b57071c9e4"
         ),
         .binaryTarget(
             name: "GrowSurfAdjustAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfAdjustAttribution.xcframework.zip",
-            checksum: "ab576f722d46aeebbfd77f26ae8287a627571bc25a100668484412e830bd359e"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.2/GrowSurfAdjustAttribution.xcframework.zip",
+            checksum: "e3b6c13fd1b1dbe212ac9addd352bfdaddb8ba357dc8c866045999dce24c4fe6"
         ),
         .binaryTarget(
             name: "GrowSurfAppsFlyerAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfAppsFlyerAttribution.xcframework.zip",
-            checksum: "3966f5370146b02f9fcc6de630bc3abd46a4a1d6fd0f1d206b7e7f8081fb4a23"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.2/GrowSurfAppsFlyerAttribution.xcframework.zip",
+            checksum: "ede53c6828c94564fb224917e6fff86044cf6cf04e727d0ecfec970c19034139"
         ),
         .binaryTarget(
             name: "GrowSurfSingularAttribution",
-            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.1/GrowSurfSingularAttribution.xcframework.zip",
-            checksum: "c420fc2dedc606d30bb0303c63664a6a68a9ba38f08dca6bf117d02843d8a283"
+            url: "https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/download/v0.3.2/GrowSurfSingularAttribution.xcframework.zip",
+            checksum: "366f33dbf3a43339401bb85ac204b959e12e539c90f540168619c60e2c8296fc"
         ),
     ]
 )

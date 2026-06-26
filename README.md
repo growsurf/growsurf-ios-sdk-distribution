@@ -11,7 +11,7 @@ Choose one install path.
 Use the tag-pinned public podspec:
 
 ```ruby
-growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.3.1/GrowSurfSDK.podspec'
+growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.3.2/GrowSurfSDK.podspec'
 
 pod 'GrowSurfSDK', :podspec => growsurf_podspec
 ```
@@ -25,12 +25,6 @@ pod 'GrowSurfSDK/AppsFlyerAttribution', :podspec => growsurf_podspec
 pod 'GrowSurfSDK/SingularAttribution', :podspec => growsurf_podspec
 ```
 
-For the native window's in-app Google contacts sign-in (optional; pulls in GoogleSignIn — the core SDK does not):
-
-```ruby
-pod 'GrowSurfSDK/GoogleContacts', :podspec => growsurf_podspec
-```
-
 ### Swift Package Manager
 
 Add this repository URL in Xcode:
@@ -39,13 +33,13 @@ Add this repository URL in Xcode:
 https://github.com/growsurf/growsurf-ios-sdk-distribution.git
 ```
 
-Use version `0.3.1` or later and add the `GrowSurfSDK` product to your app target.
+Use version `0.3.2` or later and add the `GrowSurfSDK` product to your app target.
 
 Package manifest example:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.3.1"),
+    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.3.2"),
 ],
 targets: [
     .target(
@@ -74,18 +68,18 @@ For the native window's in-app Google contacts sign-in (optional; pulls in Googl
 
 ### Manual
 
-Download the required XCFramework zips from the [`v0.3.1` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.3.1), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
+Download the required XCFramework zips from the [`v0.3.2` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.3.2), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
 
 ## Release Artifacts
 
-The `v0.3.1` release contains:
+The `v0.3.2` release contains:
 
 - `GrowSurfSDK.xcframework.zip`
 - `GrowSurfBranchAttribution.xcframework.zip`
 - `GrowSurfAdjustAttribution.xcframework.zip`
 - `GrowSurfAppsFlyerAttribution.xcframework.zip`
 - `GrowSurfSingularAttribution.xcframework.zip`
-- `GrowSurfSDK-CocoaPods-0.3.1.zip`
+- `GrowSurfSDK-CocoaPods-0.3.2.zip`
 
 ## Documentation
 
