@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'GrowSurfSDK'
-  s.version = '0.4.0'
+  s.version = '0.5.0'
   s.summary = 'Swift SDK for GrowSurf mobile referral attribution and the native GrowSurf window.'
   s.description = 'GrowSurfSDK provides native iOS referral attribution, participant creation, sharing, participant-scoped referral portal access, and the experimental native GrowSurf window.'
   s.homepage = 'https://docs.growsurf.com/developer-tools/ios-sdk'
