@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.10.0
+
+- Adds referral status badges, status tooltips, and a sort and filter menu to the native GrowSurf Window.
+- Adds an optional referral status filter to referral list requests. Use the returned `nextOffset` to load the next filtered page.
+- Displays starter reward icons and the default gift on an accent-colored plate while uploaded reward images keep their full image area.
+- Uses the program's button colors for numbered How It Works steps.
+
 ## 0.9.0
 
 - Keeps participant language changes in place when the native Window refreshes.
