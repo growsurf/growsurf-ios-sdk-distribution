@@ -4,26 +4,7 @@ Public binary distribution for the GrowSurf iOS SDK. The SDK implementation sour
 
 ## Installation
 
-Choose one install path.
-
-### CocoaPods
-
-Use the tag-pinned public podspec:
-
-```ruby
-growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.10.1/GrowSurfSDK.podspec'
-
-pod 'GrowSurfSDK', :podspec => growsurf_podspec
-```
-
-Optional attribution adapters are available as subspecs:
-
-```ruby
-pod 'GrowSurfSDK/BranchAttribution', :podspec => growsurf_podspec
-pod 'GrowSurfSDK/AdjustAttribution', :podspec => growsurf_podspec
-pod 'GrowSurfSDK/AppsFlyerAttribution', :podspec => growsurf_podspec
-pod 'GrowSurfSDK/SingularAttribution', :podspec => growsurf_podspec
-```
+Use Swift Package Manager for new iOS integrations. If your app uses CocoaPods, use the tag-pinned podspec below; it does not depend on CocoaPods Trunk.
 
 ### Swift Package Manager
 
@@ -33,13 +14,13 @@ Add this repository URL in Xcode:
 https://github.com/growsurf/growsurf-ios-sdk-distribution.git
 ```
 
-Use version `0.10.1` or later and add the `GrowSurfSDK` product to your app target.
+Use version `0.10.2` or later and add the `GrowSurfSDK` product to your app target.
 
 Package manifest example:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.10.1"),
+    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.10.2"),
 ],
 targets: [
     .target(
@@ -66,20 +47,39 @@ For the native window's in-app Google contacts sign-in (optional; pulls in Googl
 .product(name: "GrowSurfGoogleContacts", package: "growsurf-ios-sdk-distribution")
 ```
 
+### CocoaPods
+
+Use the tag-pinned public podspec:
+
+```ruby
+growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.10.2/GrowSurfSDK.podspec'
+
+pod 'GrowSurfSDK', :podspec => growsurf_podspec
+```
+
+Optional attribution adapters are available as subspecs:
+
+```ruby
+pod 'GrowSurfSDK/BranchAttribution', :podspec => growsurf_podspec
+pod 'GrowSurfSDK/AdjustAttribution', :podspec => growsurf_podspec
+pod 'GrowSurfSDK/AppsFlyerAttribution', :podspec => growsurf_podspec
+pod 'GrowSurfSDK/SingularAttribution', :podspec => growsurf_podspec
+```
+
 ### Manual
 
-Download the required XCFramework zips from the [`v0.10.1` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.10.1), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
+Download the required XCFramework zips from the [`v0.10.2` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.10.2), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
 
 ## Release Artifacts
 
-The `v0.10.1` release contains:
+The `v0.10.2` release contains:
 
 - `GrowSurfSDK.xcframework.zip`
 - `GrowSurfBranchAttribution.xcframework.zip`
 - `GrowSurfAdjustAttribution.xcframework.zip`
 - `GrowSurfAppsFlyerAttribution.xcframework.zip`
 - `GrowSurfSingularAttribution.xcframework.zip`
-- `GrowSurfSDK-CocoaPods-0.10.1.zip`
+- `GrowSurfSDK-CocoaPods-0.10.2.zip`
 
 ## Documentation
 

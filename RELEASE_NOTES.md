@@ -1,5 +1,14 @@
 # Release Notes
 
+## 0.10.2
+
+- Shows an optional bold title above each How It Works step, and an uploaded step image in place of the step number, as the web GrowSurf Window does.
+- Fills `{{campaignReward['<id>']['<key>']}}` tokens in Window copy from Campaign Reward metadata, as the web GrowSurf Window does.
+- Shows saved referral reward descriptions in Rewards. `GrowSurfReward` adds optional `description` and `rewardValue`.
+- Uses typographic apostrophes in referral status tooltips.
+- Loads the Window when an affiliate application or terms link is malformed. The malformed link is left out.
+- Shows `$` and `\` in Window text values, such as a company name or invited email address, as written. Before, these characters could drop text or stop the message from loading.
+
 ## 0.10.1
 
 - Rounds fractional money amounts to the nearest smallest currency unit, such as a cent, in the Affiliate Summary, Leaderboard, Commissions, and Payouts. Before, one fractional amount stopped that section from loading.
