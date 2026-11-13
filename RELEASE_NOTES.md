@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.10.5
+
+- `getCampaign(participantToken:)` and `getCampaignResponse(participantToken:)` take an optional mobile participant token. With it, a participant in a reward group gets that group's rewards. The SDK uses the token for that call only.
+- `addParticipant` keeps the pending `grsf_group` code when your app passes its own attribution without `groupCode`, so the new participant still joins the group.
+
 ## 0.10.4
 
 - Reads a reward group signup code (`grsf_group`) from a referral link. Before signup, the GrowSurf Window shows that group's rewards, and the new participant joins the group. `GrowSurfAttribution` adds optional `groupCode`.

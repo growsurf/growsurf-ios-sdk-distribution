@@ -14,13 +14,13 @@ Add this repository URL in Xcode:
 https://github.com/growsurf/growsurf-ios-sdk-distribution.git
 ```
 
-Use version `0.10.4` or later and add the `GrowSurfSDK` product to your app target.
+Use version `0.10.5` or later and add the `GrowSurfSDK` product to your app target.
 
 Package manifest example:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.10.4"),
+    .package(url: "https://github.com/growsurf/growsurf-ios-sdk-distribution.git", from: "0.10.5"),
 ],
 targets: [
     .target(
@@ -52,7 +52,7 @@ For the native window's in-app Google contacts sign-in (optional; pulls in Googl
 Use the tag-pinned public podspec:
 
 ```ruby
-growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.10.4/GrowSurfSDK.podspec'
+growsurf_podspec = 'https://raw.githubusercontent.com/growsurf/growsurf-ios-sdk-distribution/v0.10.5/GrowSurfSDK.podspec'
 
 pod 'GrowSurfSDK', :podspec => growsurf_podspec
 ```
@@ -68,18 +68,18 @@ pod 'GrowSurfSDK/SingularAttribution', :podspec => growsurf_podspec
 
 ### Manual
 
-Download the required XCFramework zips from the [`v0.10.4` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.10.4), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
+Download the required XCFramework zips from the [`v0.10.5` release](https://github.com/growsurf/growsurf-ios-sdk-distribution/releases/tag/v0.10.5), unzip them, drag the frameworks into your Xcode project, and set each framework to **Embed & Sign**.
 
 ## Release Artifacts
 
-The `v0.10.4` release contains:
+The `v0.10.5` release contains:
 
 - `GrowSurfSDK.xcframework.zip`
 - `GrowSurfBranchAttribution.xcframework.zip`
 - `GrowSurfAdjustAttribution.xcframework.zip`
 - `GrowSurfAppsFlyerAttribution.xcframework.zip`
 - `GrowSurfSingularAttribution.xcframework.zip`
-- `GrowSurfSDK-CocoaPods-0.10.4.zip`
+- `GrowSurfSDK-CocoaPods-0.10.5.zip`
 
 ## Documentation
 
