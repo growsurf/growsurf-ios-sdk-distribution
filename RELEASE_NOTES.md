@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.10.6
+
+- `GrowSurfCampaignReward` adds optional `groupId`: the reward group the reward belongs to (`grp_…`), or `nil` for Default.
+
+## Correction (2026-11-17)
+
+- This note corrects the 0.10.5 and 0.10.4 entries below. Before sign-in, the GrowSurf Window and `getCampaign` show Default rewards. A referral link (`ref`) or a reward group signup code (`groupCode`, from `grsf_group`) alone does not reveal a group's private rewards or grant membership. Joining requires verified identity matching the group's email or domain rules.
+
 ## 0.10.5
 
 - `getCampaign(participantToken:)` and `getCampaignResponse(participantToken:)` take an optional mobile participant token. With it, a participant in a reward group gets that group's rewards. The SDK uses the token for that call only.
